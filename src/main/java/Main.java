@@ -7,5 +7,24 @@ public class Main {
         pw.println("Hello world ПИДОР Bitch!!");
 
 
+        char ch[] = {'a', 'b', 'c', 'd', 'e', 'f'};
+
+        String str = new String(ch, 2, 2);
+
+        pw.println("My fucking string equals ~" + str + "~ length " + str.length());
+
+        byte bt[] = {65, 66, 67, 68, 69, 70};
+
+        String str1 = new String(bt);
+        pw.println("Str byte = " + str1 + " length " + str1.length());
+
+        String str2 = new String(bt, 2,3);
+        pw.println("Str byte = " + str2 + " length " + str2.length());
+
+        String str3 = "wtf";
+        pw.println("Str = " + str3 + " length " + str3.length());
+
+        pw.println("WWWW " + "pidor".length());
+
     }
 }
