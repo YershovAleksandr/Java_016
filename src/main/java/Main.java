@@ -26,5 +26,18 @@ public class Main {
 
         pw.println("WWWW " + "pidor".length());
 
+        String ss = "pidor";
+        for (int i = 0; i < ss.length(); i++) {
+            pw.println("char at " + i + " = " + ss.charAt(i));
+        }
+
+        char cch[] = new char[5];
+        ss.getChars(0, 2, cch, 0);
+
+        for (int i = 0; i < 2; i++) {
+            pw.println("cch " + cch[i]);
+        }
+
+
     }
 }
