@@ -26,17 +26,43 @@ public class Main {
 
         pw.println("WWWW " + "pidor".length());
 
-        String ss = "pidor";
+        //String ss = "pйdor";
+        String ss = "ABйCDF";
         for (int i = 0; i < ss.length(); i++) {
             pw.println("char at " + i + " = " + ss.charAt(i));
         }
 
-        char cch[] = new char[5];
+        char cch[] = new char[6];
         ss.getChars(0, 2, cch, 0);
 
-        for (int i = 0; i < 2; i++) {
+       // cch = ss.toCharArray();
+
+        for (int i = 0; i < 6; i++) {
             pw.println("cch " + cch[i]);
         }
+
+        byte btt[] = new byte[5];
+        btt = ss.getBytes();
+
+        for(byte a : btt) {
+            pw.println("bt = " + a);
+        }
+
+        String ss1 = "Pidor";
+        String ss2 = "PidoRaSS";
+
+        pw.println("result = " + ss1.regionMatches(true, 2, ss2, 2, 3));
+
+
+        String s = "Now is the time for all good men " +
+                    "to come to the aid of their country.";
+
+        pw.println(s);
+        pw.println("Indexof(t) = " + s.indexOf('t'));
+        pw.println("LastIndexof(t) = " + s.lastIndexOf('t'));
+        pw.println("Indexof(t, 10) = " + s.indexOf('t', 10));
+        pw.println("LastIndexof(t, 60) = " + s.lastIndexOf('t', 60));
+
 
 
     }
